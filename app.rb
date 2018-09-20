@@ -6,22 +6,28 @@ require_relative 'app/models/ship.rb'
 module FormsLab
   class App < Sinatra::Base
 
-    get '/pirates' do
-      @pirates = Pirate.all
-      erb :'/pirates/index'
+    # get '/pirates' do
+    #   @pirates = Pirate.all
+    #   erb :'/pirates/index'
+    # end
+    get '/' do
+      erb :root
     end
 
     get '/pirates/new' do
       erb '/pirates/new'
     end
 
-    get '/pirates/:id' do
-      @pirate = Pirate.find(params[:id])
-      erb :'/pirates/show'
-    end
+    # get '/pirates/:id' do
+    #   @pirate = Pirate.find(params[:id])
+    #   erb :'/pirates/show'
+    # end
 
     post '/pirates' do
-
+      @pirates = Pirate.new(params[:pirate])
+      params[:pirate][:ships].each {|ship_info| Ship.new(ship_info)}
+      @ships = Ship.all
+       erb :'pirates/show'
     end
 
 
