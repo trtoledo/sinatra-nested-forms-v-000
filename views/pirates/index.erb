@@ -1,8 +1,22 @@
-<h1>Pirates</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>Pirates</h1>
 
-<% @pirates.each do |pirate| %>
-  <%= pirate.name %>
-  <%= pirate.weight %>
-  <%= pirate.height %>
+    <ul>
 
-<%end%>
+    <% @pirates.each do |pirate| %>
+      <li><%= pirate.name %></li>
+      <li><%= pirate.weight %></li>
+      <li><%= pirate.height %></li>
+      <%end%>
+
+    </ul>
+
+
+   </body>
+</html>
