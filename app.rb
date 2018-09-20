@@ -9,7 +9,7 @@ module FormsLab
     end
 
     get '/pirates/:id' do
-      Pirate.find(params["id"])
+      @pirate = Pirate.find(params["id"])
     end
 
 
