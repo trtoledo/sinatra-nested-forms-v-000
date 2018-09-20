@@ -6,10 +6,6 @@ require_relative 'app/models/ship.rb'
 module FormsLab
   class App < Sinatra::Base
 
-    # get '/pirates' do
-    #   @pirates = Pirate.all
-    #   erb :'/pirates/index'
-    # end
     get '/' do
       erb :root
     end
