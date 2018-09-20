@@ -8,7 +8,10 @@ module FormsLab
       erb :'/pirates/index'
     end
 
-    
+    get '/pirates/:id' do
+    end
+
+
 
     # code other routes/actions here
 
