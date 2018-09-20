@@ -8,7 +8,7 @@ class Pirate
     @name = params[:name]
     @weight = params[:weight]
     @height = params[:height]
-    @@pirates <= self
+    @@pirates << self
   end
 
   def self.all
