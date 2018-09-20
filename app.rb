@@ -11,7 +11,7 @@ module FormsLab
     end
 
     get '/new' do
-      erb '/pirates/new'
+      erb :'/pirates/new'
     end
 
     # get '/pirates/:id' do
