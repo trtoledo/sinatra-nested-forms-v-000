@@ -10,7 +10,7 @@ module FormsLab
 
     get '/pirates/:id' do
       @pirate = Pirate.find(params[:id])
-      erb :'/pirates/index'
+      erb :'/pirates/show'
     end
 
 
