@@ -7,6 +7,7 @@ gem 'pry'
 gem 'tux'
 gem 'require_all'
 gem 'sqlite3'
+gem 'rake'
 
 group :test do
   gem 'rspec'
