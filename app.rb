@@ -8,6 +8,8 @@ module FormsLab
       erb :'/pirates/index'
     end
 
+    
+
     # code other routes/actions here
 
   end
