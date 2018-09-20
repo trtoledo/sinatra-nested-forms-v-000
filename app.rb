@@ -13,6 +13,10 @@ module FormsLab
       erb :'/pirates/show'
     end
 
+    get '/pirates/new' do
+
+    end
+
     
 
 
